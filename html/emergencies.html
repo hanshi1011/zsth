@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>找配套</title>
+<link media="screen" rel="stylesheet" href="../css/base.css" />
+<link media="screen" rel="stylesheet" href="../css/emergencies.css" />
+<script type="text/javascript" src="../lib/js/lhgcore.min.js"></script>
+<script type="text/javascript" src="../lib/js/lhgcalendar.min.js"></script>
+<script src="../lib/js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<!--  top  -->
+<div class="top clearfix w">
+    <div class="fr">
+        <span>欢迎来到中视泰禾！</span>
+        <a href="login.html">登录 </a>
+        <a class="top-span" href="login.html">免费注册</a>
+    </div>
+</div>
+<!--   header   -->
+<div class="header ">
+    <div class="header-top w clearfix">
+        <h1 class="fl">
+            <a href="../index.html">中视泰禾</a>
+        </h1>
+        <div class="fl">
+            <div class="box">
+                <input name="textfield" type="text" class="fl" maxlength="20" required="required" placeholder=" 没有人比我们更了解场地" />
+                <input class="fr search" type="button" value="搜索">  
+            </div>
+            <div class="header-text clearfix">
+                <i class="fl"></i>
+                <span class="fl">HOT TOP：</span>
+                <span class="fl">北京五环大酒店 </span>
+                <span class="fl"> 北京王府井希尔顿酒店</span>
+            </div>
+        </div>
+        <span class="fl header-span">或</span>
+        <input class="fl" type="button" value="全景" id="tijiao">
+        <i class="header-top-img"></i>
+        <div class="header-box fr">
+            <p class="header-box-p">4006-165-212</p>
+            <p class="header-box-p1">周一至周日 9:00-21:00</p>
+        </div>
+    </div>
+</div>
+<!--    nav    -->
+<div class="nav">
+    <ul class=" clearfix w">
+        <li class="fl">
+            <a href="../index.html">首页</a>
+        </li>
+        <li class="fl">
+            <a href="field.html">看会场</a>
+        </li>
+        <li class="fl">
+            <a href="facilities.html">找配套</a>
+        </li>
+        <li class="fl">
+            <a href="login.html">全景展区<span>(VIP用户)</span></a>
+        </li>
+        <li class="fl nav-yj active">
+            <i>HOT</i>
+            <a href="emergencies.html">加急预案</a>
+        </li>
+    </ul>
+</div>
+
+<!--label list-->
+<div class="w emergencies-labe clearfix">
+    <div class="fl">
+        <div>
+            <div class="content" id="urgent-content" style=""><h3>填写应急需求</h3>
+                <p class="emergencies-labe-p">提交后 5 分钟内客服与您联系</p>
+                <form class="content-p">
+                    <span>活动区域</span>
+                    <select name="区域名称">
+                    <option value="东城区">东城区</option>
+                    <option value="西城区">西城区</option>
+                    <option value="朝阳区">朝阳区</option>
+                    <option value="海淀区">海淀区</option>
+                    <option value="丰台区">丰台区</option>
+                    <option value="房山区">房山区</option>
+                    <option value="大兴区">大兴区</option>
+                    <option value="通州区">通州区</option>
+                    <option value="昌平区">昌平区</option>
+                    <option value="顺义区">顺义区</option>
+                    <option value="怀柔区">怀柔区</option>
+                    <option value="延庆区">延庆区</option>
+                    <option value="平谷区">平谷区</option>
+                    <option value="门头沟">门头沟</option>
+                    <option value="石景山">石景山</option>
+                    <option value="密云">密云</option>
+                </select>
+                <span>参会人数</span>
+                <select class="select-r" name="参会人数">
+                    <option value="0-50人">0-50人</option>
+                    <option value="50-100人">50-100人</option>
+                    <option value="100-150人">100-150人</option>
+                    <option value="150-200人">150-200人</option>
+                    <option value="200-300人">200-300人</option>
+                    <option value="300-500人">300-500人</option>
+                    <option value="500-1000人">500-1000人</option>
+                    <option value="1000人以上">1000人以上</option>
+                </select>
+                <span>活动时长</span> 
+                <select name="活动时长">
+                    <option value="一晚">一晚</option>
+                    <option value="半天">半天</option>
+                    <option value="一天">一天</option>
+                    <option value="2-3天">2-3天</option>
+                    <option value="3-5天">3-5天</option>
+                    <option value="5-7天">5-7天</option>
+                    <option value="7-10天">7-10天</option>
+                    <option value="10天以上">10天以上</option>
+                </select>
+                <span>酒店星级</span>  
+                <select class="select-r" name="酒店星级">
+                    <option value="三星酒店">三星酒店</option>
+                    <option value="四星酒店">四星酒店</option>
+                    <option value="五星酒店">五星酒店</option>
+                    <option value="其他">其他</option>
+                </select>
+                    <span>活动日期</span>  
+                    <input class="content-p-data" type="runcode" id="inp9" name="">
+                <span>会议需求</span>  
+                <select class="select-r" name="会议需求">
+                    <option value="开会">开会</option>
+                    <option value="用餐">用餐</option>
+                    <option value="住宿">住宿</option>
+                    <option value="娱乐">娱乐</option>
+                </select>        
+                <div class="button-row">
+                    <input type="button" id="sign-in-urgent" class="sign-in" value="提交">
+                    <br />
+                    <span>在线使用人数<strong>1888</strong>人，成交数量<strong>558</strong>单。</span>
+                    <p>网站、APP、微信端都有，适用于中小企业客户，可以帮找场地，也可以自己找场地寻求报价，3分钟内响应用户需求。网站、APP、微信端都有，适用于中小企业客户，可以帮找场地，也可以自己找场地寻求报价，3分钟内响应用户需求。网站、APP、微信端都有，适用于中小企业客户，可以帮找场地，也可以自己找场地寻求报价，3分钟内响应用户需求。网站、APP、微信端都有，适用于中小企业客户，可以帮找场地，也可以自己找场地寻求报价，3分钟内响应用户需求。</p>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="emergencies-img fr">
+        <img src="../images/emergencies/lshcd.jpg" alt="..." >
+        <img src="../images/emergencies/5min.jpg" alt="..." >
+    </div>
+</div>
+<!--  footer   -->
+<div class="h_footer w">
+    <div class="h_footer_nav">
+        <a href="../index.html">首页</a> |
+        <a href="../html/about.html">关于我们</a> |
+        <a href="#">职位招聘</a> |
+        <a href="../html/about.html">联系我们</a> |
+        <a href="../html/about.html">免责声明</a> |
+        <br />
+        <br />
+        <span><i class="h_dianhua">免费会场资讯热线：</i><strong>4006-165-212 </strong> (9:00-21:00)</span>
+    </div>
+    <div >
+        |<span>关于版权：Copyright [dates] by [author/owner]</span>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    J(function(){
+    J('#inp9').calendar({ minDate:'%y-%M-%d' });
+});
+
+function opcal(){
+    J.calendar.Show();
+}
+</script>
+</html>
+
+
+
+
+
+
+

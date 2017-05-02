@@ -1,0 +1,77 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+    重置密码
+</title><link rel="stylesheet" type="text/css" href="../css/login.css" /><link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <script type="text/javascript" src="../lib/js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../js/login.js"></script>
+</head>
+<body>
+<form name="form1" method="post" action="./reg.aspx" id="form1">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTEwOTgyMjc0MGRkLQ+JhS7O10/9YHxjwVbHizQ2zeTidZN6hL6/9SN2msU=" />
+</div>
+
+<div>
+
+    <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="1005D06F" />
+    <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAisVkHs4Di2T11LVwCcmQITIy1ZWF6z4FVu70NVqFRM5QeJ8mUvH3bV0tmbmYP+OA5G+CYM+x5yMyo+/5C4iEU7pLy9Q1iQ2vPkFRai7sx2bUxzCEJq0lsg3gPKALlk4rsQhqJaXWqyRQuV52YSurGSP1jLJHiqNfRsonZfptdXU2hduKdsnoBEq0ZCCUGcVFscjiaA20To2UIHroBZ8rrM" />
+</div>
+    <div class="container">
+            <h1><a href="../IndexNew.aspx"></a></h1>
+            <div id="container_demo" >
+                <div id="wrapper">
+                    <div id="login" class="animate form">
+                            VIP用户修改密码
+    <p>
+    
+        <input name="phone" type="text" id="phone" placeholder="手机号" style="color:#999999;background-color:White;font-size:X-Large;border-radius:4px;" />
+        </p>
+
+        <p>
+            <input name="txt_IDcode" type="text" id="txt_IDcode" onkeypress="return isNumberKey(this)" onpaste="return false" placeholder="验证码" style="color:#999999;background-color:White;font-size:X-Large;border-radius:4px; width: 203px; height: 40px" />
+            <img id="valiCode" alt="验证码" src="ValidateCode.aspx" 
+                style="width: 110px; height: 40px" onclick="javascript:document.getElementById('valiCode').src='ValidateCode.aspx?id='+Math.random();return false;"/>
+        </p>
+        <span id="Label2"></span>
+
+    
+
+    <p>
+    
+        <input name="pass" type="password" id="pass" placeholder="设置密码" style="color:#999999;background-color:White;font-size:X-Large;width:340px;border-radius:4px;" />
+            <span id="pas"></span>
+    </p>
+
+        <p>
+    
+            <input name="confirm" type="password" id="confirm" placeholder="确认密码" style="color:#999999;background-color:White;font-size:X-Large;width:334px;border-radius:4px;" />
+            <span id="conpass"></span>
+    </p>
+
+    <p>
+
+        <input type="hidden" name="HDP" id="HDP" />
+
+         <span id="lib_msg"></span>
+
+            
+        <a id="HyperLink1" href="VIPLogin.aspx">立即登录</a>
+        <input type="hidden" name="HDA" id="HDA" />
+
+    </p>
+
+   <p>
+        <input type="submit" name="Button2" value="修改密码" id="Button2" style="height: 21px" />      
+    </p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </form>
+</body>
+</html>

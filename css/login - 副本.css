@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+h1{text-align:center;width:;height:100px;width:100%;background:rgba(0,0,0,0.5);}
+h1 a{display:inline-block; width:206px; height:40px; background:url(../images/login/login-logo.png) no-repeat; text-indent:-9999em;margin-top:30px;}
+
+body{background:url(../images/login/login-bg.jpg);}  
+#login{width:408px;height:400px;background:rgba(0,0,0,0.5);color:#fff;padding:20px 48px 0 40px;position:absolute;top:140px;left:50%;margin-left:-200px;}
+#login h2{font-size:24px;margin:0px 0 20px 120px;}
+#username,#password{width:320px;height:40px;font-size:16px;background:#fff;margin-bottom: 14px;padding-left:10px; border-radius:2px;}
+.button input{width:320px;height:36px;background:#ff6c00;color:#fff;border-radius:4px;margin:14px 0 32px 0;}
+#login a{color:#ff6c00;font-size:16px;}
+#loginkeeping{vertical-align:middle;}
+.loginkeeping{font-size:14px;}
+
+#register{width:408px;height:530px;background:rgba(0,0,0,0.5);color:#fff;padding:20px 48px 0 40px;position:absolute;top:140px;left:50%;margin-left:-200px; display:none;}
+#register h2{font-size:24px;margin:0px 0 20px 120px;}
+#usernamesignup,#passwordsignup,#passwordsignup_confirm,#emailsignup-gs{width:320px;height:40px;font-size:16px;background:#fff;margin-bottom: 14px;padding-left:10px; border-radius:2px;}
+#emailsignup,#yanzm{width:200px;height:40px;font-size:16px;background:#fff;margin-bottom: 14px;padding-left:10px; border-radius:2px;}
+
+#register .yzm{width:106px;height:40px;font-size:16px;background:#b3b3b3;margin:0 0 14px 10px; border-radius:2px;color:#4c92d3;}
+
+.to_register{color:#ff6c00;font-size:16px;}
+

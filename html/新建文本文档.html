@@ -1,0 +1,123 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	会员注册
+</title>
+<link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <script type="text/javascript" src="../lib/js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../js/login.js"></script>
+</head>
+    <script type="text/javascript">
+        function checkPhone() {
+            var phone = document.getElementById('phone').value;
+            if (!(/^1(3|4|5|7|8)\d{9}$/.test(phone))) {
+                //alert("手机号码有误，请重填"); //
+                document.getElementById("lib_phone").innerHTML = "手机号码有误，请重填!";
+                return false;
+            }
+            if (document.getElementById('phone').value == "") {
+                document.getElementById("lib_phone").innerHTML = "手机号必须填写!";
+                return false;
+            }
+            if (document.getElementById('pass').value == "") {
+                document.getElementById("pas").innerHTML = "请输入密码!";
+                return false;
+            }
+            if (document.getElementById('pass').value != "") {
+                if (document.getElementById("pass").value.length < 5) {
+                    document.getElementById("pas").innerHTML = "密码长度为5到18个字符!";
+                    document.getElementById("pass").focus();
+                    return false;
+                }
+                if (document.getElementById("pass").value.length > 5) {
+                    document.getElementById("pas").innerHTML = "";
+                }
+            } 
+        }
+    </script>
+
+        <!--验证码只能为数字验证开始-->
+    <script language= "javascript" type="text/javascript">
+        function isNumberKey(evt) {
+            var charCode = (evt.which) ? evt.which : event.keyCode
+            if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                return false;
+            }
+            return true;
+        }                                                          
+     </script>
+    <!--验证码只能为数字验证结束-->
+<style type="text/css">
+h1{text-align:center;width:;height:100px;width:100%;background:rgba(0,0,0,0.5);}
+h1 a{display:inline-block; width:206px; height:40px; background:url(../images/login/login-logo.png) no-repeat; text-indent:-9999em;margin-top:30px;}
+
+body{background:url(../images/login/login-bg.jpg);}  
+#login{width:408px;height:400px;background:rgba(0,0,0,0.5);color:#fff;padding:20px 48px 0 40px;position:absolute;top:140px;left:50%;margin-left:-200px;}
+#login h2{font-size:24px;margin:0px 0 20px 100px;}
+#username,#password{width:320px;height:40px;font-size:16px;background:#fff;margin-bottom: 14px;padding-left:10px; border-radius:2px;}
+.container input{width:320px;height:36px;background:#ff6c00;color:#fff;border-radius:4px;margin:12px 0 10px 0;font-size:14px;}
+.container img{margin-top:12px;}
+#login a{color:#ff6c00;font-size:16px;}
+.login-p{text-align: right;}
+</style>
+<body>
+    <form name="form1" method="post" action="./VIPLogin.aspx" id="form1">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE0NDQzMTI3NzIPZBYCAgMPZBYCAgEPFgIeB1Zpc2libGVoZGRw3NlhZoxgKaRe0NdYRQu4LklryVyk+DjEbteAZnjbbw==" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="3C5AE0F6" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAbv+eyZwliVpX064gQkAnJcIy1ZWF6z4FVu70NVqFRM5Ub4Jgz7HnIzKj7/kLiIRTsHifJlLx921dLZm5mD/jgOdDlmqzbR2b7nqJgQp10tGj9YyyR4qjX0bKJ2X6bXV1MYe8TRgl9rz1vEvXX5YKu/Y9GZxQS7RZHaZapLLg/4Tw==" />
+</div>
+
+
+
+    <div class="container">
+    <h1><a href="../IndexNew.aspx"></a></h1>
+        <div id="divLoginPanel">
+<b>你还没有登录</b><br /><br />
+        <div id="container_demo" >
+        <div id="wrapper">
+        <div id="login" class="animate form">
+        <h2>VIP用户登录</h2>
+
+    <p>
+     <input name="phone" type="text" id="phone" onkeypress="return isNumberKey(this)" onpaste="return false" placeholder="手机号" style="color:#999999;background-color:White;font-size:X-Large;border-radius:4px;" />
+     </p>
+        <span id="lib_phone"></span>
+
+    <p>
+    
+        <input name="pass" type="password" id="pass" onkeypress="return isNumberKey(this)" onpaste="return false" placeholder="密码" style="color:#999999;background-color:White;font-size:X-Large;width:320px;border-radius:4px;" />
+            </p>
+            <span id="pas"></span>
+
+            <p>
+            <input name="txt_IDcode" type="text" id="txt_IDcode" onkeypress="return isNumberKey(this)" onpaste="return false" placeholder="验证码" style="color:#999999;background-color:White;font-size:X-Large;border-radius:4px; width: 203px; height: 40px" />
+            <img id="valiCode" alt="验证码" src="ValidateCode.aspx" 
+                style="width: 110px; height: 40px" onclick="javascript:document.getElementById('valiCode').src='ValidateCode.aspx?id='+Math.random();return false;"/>
+        </p>
+                <span id="Label2"></span>
+    
+     <p class="login-p">
+         <input type="submit" name="btn_login" value="登录" onclick="return checkPhone();" id="btn_login" />
+         <input type="submit" name="Button2" value="忘记密码" id="Button2" />
+         <span>还不是VIP会员？</span>
+         <a id="HyperLink1" href="landing.aspx">立即注册</a>
+       </p>
+
+         <span id="lib_msg"></span>
+          </div>
+     </div>
+     </div>
+     </div>
+     </div>
+    </form>
+</body>
+</html>

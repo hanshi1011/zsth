@@ -1,0 +1,86 @@
+@charset "utf-8";
+/*-------top--------*/
+.top{border-bottom:1px solid #f3f3f3;}
+.top-span{color:#ff6d00;}
+/*-----------header----------*/
+.header{width:100%;}
+.header h1{ margin-right:36px;}
+.header .box{margin-top:3px; width:520px;height:34px;border:2px solid #0269c7;}
+.header .box p{font-size:14px;line-height:30px;margin-left:8px;}
+.header .box input{font-size:14px;line-height:30px;color:#000;width:300px;}
+.header .box .search{width:60px;height:32px;background:#0269c7;text-align:center;line-height:32px;color:#fff;}
+#tijiao{margin-top:4px; width:88px;height:32px;background:#0269c7;text-align:center;line-height:32px;color:#fff;}
+.header-span{font-size:16px;padding:10px 18px;}
+.span1{display:none;}
+.header-box{width:142px;height:44px;border-left:2px solid #888;padding-left:6px;}
+.header-box-p{font-size:20px;color:#0294df;}
+
+.header-top{background:#fff;z-index:999;padding:10px 0;border-bottom:2px solid #fff;margin-top:20px;}
+.header-top1{background:#fff;z-index:999;border-bottom:2px solid #ccc;position:fixed;top:-20px;left:50%;margin-left:-600px;}
+.header h1 a{ display:block; width:190px; height:40px; background:url(../images/index/logotop.png) no-repeat; text-indent:-9999em;background-size:}
+.header{height:70px;}
+.header-top-img{margin-left:120px; display:inline-block;width:44px;height:44px;background:url(.. /images/index/xb.png) no-repeat -130px -6px;}
+/*--- nav ---*/
+.nav{margin-top:10px; width:100%;height:50px; background:#0585de;}
+.nav li{text-align:center;}
+.nav li a{font-size:20px;color:#fff;line-height:50px;display:block;padding:0 36px 0; height:100%;}
+.nav li:hover{background:#155295;}
+.nav .active{background:#155295;}
+.nav li a span{font-size:16px;}
+.nav .nav-yjya a{color:#ff6c00;}
+
+/*--- banner ---*/
+.labe{border:1px solid #ccc;border-radius:6px;padding:0 20px;margin-top:20px;}
+.labe-list{position:relative;margin-top:36px;}
+.labe-list-p{font-size:14px;width:1200px;position:absolute;left:0;top:-16px;}
+.labe a{display:block;height:26px;float:left;margin:10px 4px 0 4px;line-height:14px;font-size:14px;padding:5px 10px;text-align:center;border-radius:4px;color:#8a8a8a;}
+.labe span{height:26px;float:left;margin:10px 4px 0 4px;;line-height:14px;font-size:14px;padding:5px 14px;text-align:center;}
+.labe a:hover{background:#ff6c00;color:#fff;cursor:hand;}
+.labe p{font-size:16px;margin:10px 0 5px 0;}
+
+#answerOrder span{display:inline-block;height:20px;margin:14px 4px 0 4px;line-height:14px;padding:2px 2px;text-align:center;border:1px solid #ff6c00;border-radius: 4px; font-size:12px;float:left;}
+.labe i{font-style:normal;margin:12px 4px 0 18px;font-size:14px;}
+.labe div{border-bottom:1px solid #e6e6e6;height:44px;}
+.labe .selected{background:#ff6c00;color:#fff;}
+.labe-list .labe-btn{color:#ff6c00;display:none;}
+/*------酒店列表------*/
+.hotel-list-concrete{width:760px;font-size:14px;line-height:26px;border:1px solid #999;margin:20px 0 20px 0;-webkit-transition: all .2s linear; transition: all 0.2s linear;}
+.hotel-list-concrete img{width:180px;height:120px;margin:10px 0 0 30px;}
+
+.hotel-list-concrete ul{width:500px;position:relative;}
+.hotel-list-concrete li{float:left;width:170px;margin-right:20px;}
+.hotel-list-concrete .hotlename{ width:320px;font-size:20px;line-height:60px;}
+.hotlename span{font-size:12px;color:#1580ea;border:1px solid #1580ea;border-radius:4px;padding:2px;-webkit-transition: all .2s linear; transition: all 0.2s linear;margin-left:20px;}
+
+.hotel-list-concrete input{background:#ff9900;border-radius:6px;width:90px;height:36px;font-size:16px;color:#fff;position:absolute;right:20px;bottom:10px;}
+.hotel-list-concrete input:hover{background:#c77b08;}
+
+
+/*------baiduditu------*/
+.maptop2{width:420px;height:320px;margin-top:-1300px;margin-left:790px;}
+.maptop{position:fixed;margin-left:780px;margin-top:-450px;}
+#allmap{width:100%;height:320px;}
+.labe-list-ul p{font-size:16px;}
+.labe-list-ul .labe-list-p{font-size:20px;}
+.labe-list-ul {margin-top:10px; width:420px;height:240px;border:2px solid #0585de;border-radius:8px;}
+.labe-list-ul li{border-bottom:1px dashed #ccc;padding:10px;}
+
+
+/*-------footer-----*/
+
+.h_footer{background-color:#212425;overflow:hidden;color:#888;width:100%;height:90px;text-align:center;font-size:14px;line-height:24px;}
+.h_footer_nav{margin:14px 0 5px 0;}
+.h_footer_nav a{color:#f0f1f1;padding:0 14px;}
+.h_dianhua{background:url(../img/h_icon1.png) no-repeat 0px 0px;display:inline-block;height:23px;margin:0 10px 0 15px;width:32px;position:relative;top:4px}
+
+
+
+
+
+
+
+
+
+
+
+

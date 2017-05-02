@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 lt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7 lt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8 lt8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> 
+<html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
+    <title>会员登录注册</title>
+    <link rel="stylesheet" type="text/css" href="../css/login.css" />
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <script type="text/javascript" src="../lib/js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../js/login.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><a href="../index.html"></a></h1>
+			
+        </header>
+        <section>				
+            <div id="container_demo" >
+                <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
+                <a class="hiddenanchor" id="toregister"></a>
+                <a class="hiddenanchor" id="tologin"></a>
+                <div id="wrapper">
+                    <div id="login" class="animate form">
+                        <form  autocomplete="on"> 
+                            <h2>会员登录</h2> 
+                            <p> 
+                                <input id="username" name="username" required="required" type="text" minlength="11" maxlength="11" pattern="^1[3-9]\d{9}$" placeholder="输入手机号码"/>
+                            </p>
+                            <p> 
+                                <input id="password" name="password"  oninvalid="this.setCustomValidity('XXX');" required="required" type="password" placeholder="输入密码" minlength="6" maxlength="18" /> 
+                            </p>
+                            <p> 
+                                <input id="password" name="password"  oninvalid="this.setCustomValidity('XXX');" required="required" type="text" placeholder="输入验证码" minlength="4" maxlength="6" /> 
+                            </p>
+                            <p class="keeplogin"> 
+								<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
+								<label for="loginkeeping">自动登录</label>
+                                <a class="fr" href="javascript:;">忘记密码？</a>
+							</p>
+                            <p class="login button"> 
+                                <input type="button" value="登录" /> 
+							</p>
+                            <p class="change_link">
+								还不是会员？
+								<a href="#toregister" class="to_register enroll fr">立即注册</a>
+							</p>
+                        </form>
+                    </div>
+
+                    <div id="register" class="animate form">
+                        <form  action="mysuperscript.php" autocomplete="on"> 
+                            <h2>会员注册</h2> 
+                            <p> 
+                                <input id="usernamesignup" name="usernamesignup" required="required" maxlength="11" minlength="11" pattern="^1[3-9]\d{9}$" type="text" placeholder="输入手机号码" />
+                               
+                            </p>
+                            <p> 
+                                <input id="emailsignup" name="emailsignup"  maxlength="6" pattern="^\d{6}$"required="required" type="text" placeholder="输入短信验证码"/>
+                                 <input type="button" class="yzm" value="获取验证码" name="" /> 
+                            </p>
+                            <p>
+                                <input id="yanzm" name="usernamesignup" required="required" type="text" placeholder="输入验证码" />
+                                <img src="" width="73" ; height="30" alt="图片验证码" />
+                            </p>
+                            <p> 
+                                <input id="emailsignup-gs" name="emailsignup" required="required" type="text" placeholder="输入公司名称"/> 
+                            </p>
+                            <p> 
+                                <input id="passwordsignup" name="passwordsignup" required="required" type="password" minlength="6" maxlength="18" placeholder="输入密码"/>
+                            </p>
+                            <p> 
+                                <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" minlength="6" maxlength="18" type="password" placeholder="再次输入密码"/>
+                            </p>
+                            <span><i></i></span>
+                            <p class="signin button" id="submit_change_passwd"> 
+								<input type="submit" value="立即注册"/> 
+							</p>
+                            <p class="change_link">  
+								已经成为会员 ?
+								<a href="javascript:;" class="to_register landing fr"> 立即登陆 </a>
+                                
+							</p>
+                        </form>
+                    </div>	
+                </div>
+            </div>  
+        </section>
+        </div>	
+    
+</body>
+   
+</html>

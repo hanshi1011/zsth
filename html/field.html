@@ -1,0 +1,339 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>详情</title>
+<link media="screen" rel="stylesheet" href="../css/base.css" />
+<link media="screen" rel="stylesheet" href="../css/field.css" />
+<script src="../lib/js/jquery-2.1.4.min.js"></script>
+<script src="../js/field.js"></script>
+<script type="text/javascript" src="../lib/js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=irCMNSgwzNgpeYKYOGXFy6dppDTbGIh1"></script>
+
+</head>
+<body>
+<!--  top  -->
+<div class="top clearfix w">
+    <div class="fl">
+        <span>欢迎来到中视泰禾！</span>
+        <a href="html/login.html">登录</a>
+        <a class="top-span" href="html/login.html">免费注册</a>
+    </div>
+    <div class="fr">
+        <a href="javascript:;">全部服务</a>
+        <a href="javascript:;">会员中心</a>
+        <a href="javascript:;">帮助</a>
+        <a href="javascript:;">意见箱</a>
+    </div>
+</div>
+<!--   header   -->
+<div class="header ">
+    <div class="header-top w clearfix">
+        <h1 class="fl">
+            <a href="javascript:;">中视泰禾</a>
+        </h1>
+        <div class="fl">
+            <div class="box">
+                <input name="textfield" type="text" class="fl" maxlength="20" required="required" placeholder=" 没有人比我们更了解场地" />
+                <input class="fr search" type="button" value="搜索">  
+            </div>
+            <div class="header-text">
+                <span>中视热搜：</span>
+                <span>北京五环大酒店</span>
+                <span>北京王府井希尔顿酒店</span>
+            </div>
+        </div>
+        <span class="fl header-span">或</span>
+        <input class="fl" type="button" value="提需求" id="tijiao">
+        <i class="header-top-img"></i>
+        <div class="header-box fr">
+            <p class="header-box-p">400-000-000</p>
+            <p>周一至周日 9:00-21:00</p>
+        </div>
+    </div>
+</div>
+<!--    nav    -->
+<div class="nav">
+    <ul class=" clearfix w">
+        <li class="fl">
+            <a href="../index.html">首页</a>
+        </li>
+        <li class="fl active">
+            <a href="../html/field.html">看会场</a>
+        </li>
+        <li class="fl">
+            <a href="../html/facilities.html">找配套</a>
+        </li>
+        <li class="fl">
+            <a href="javascript:;">定方案</a>
+        </li>
+        <li class="fl">
+            <a href="../html/login.html">VR专区<span>(VIP用户)</span></a>
+        </li>
+        <li class="fl nav-yjya">
+            <a href="javascript:;">应急预案</a>
+        </li>
+    </ul>
+</div>
+
+
+<!--labe列表-->
+<div class="labe-list w clearfix">
+<div class="labe-list-p fl">会议场地>北京会场</div>
+    <div class="labe fl w">
+        <div id="labe-address" class="clearfix">
+            <span class="fl">地区选择</span>
+            <a class="selecte selected" href="javascript:;">不限</a>
+            <a href="javascript:;">东城</a>
+            <a href="javascript:;">西城</a>
+            <a href="javascript:;">朝阳</a>
+            <a href="javascript:;">海淀</a>
+            <a href="javascript:;">丰台</a>
+            <a href="javascript:;">昌平</a>
+            <a href="javascript:;">顺义</a>
+            <a href="javascript:;">密云</a>
+            <a href="javascript:;">平谷</a>
+            <a href="javascript:;">门头沟</a>
+            <a href="javascript:;">石景山</a>
+            <a href="javascript:;">房山</a>
+            <a href="javascript:;">通州</a>
+            <a href="javascript:;">怀柔</a>
+            <a href="javascript:;">延庆</a>
+            <a href="javascript:;">大兴</a>
+        </div>
+        <div id="labe-num" class="clearfix">
+            <span class="fl">会议人数</span>
+            <a class="selecte selected" href="javascript:;">不限</a>
+            <a href="javascript:;">0-30人</a>
+            <a href="javascript:;">30-60人</a>
+            <a href="javascript:;">60-100人</a>
+            <a href="javascript:;">100-200人</a>
+            <a href="javascript:;">200-300人</a>
+            <a href="javascript:;">300-500人</a>
+            <a href="javascript:;">500-1000人</a>
+            <a href="javascript:;">1000-2000人</a>
+        </div>
+        <div id="labe-star" class="clearfix">
+            <span class="fl">酒店星级</span>
+            <a class="selecte selected" href="javascript:;">不限</a>
+            <a href="javascript:;">五星级</a>
+            <a href="javascript:;">四星级</a>
+            <a href="javascript:;">三星级</a>
+            <a href="javascript:;">其他</a>
+        </div>
+        <div id="labe-style" class="clearfix">
+            <span class="fl">酒店风格</span>
+            <a class="selecte selected" href="javascript:;">不限</a>
+            <a href="javascript:;">无柱</a>
+            <a href="javascript:;">场地方正</a>
+            <a href="javascript:;">美食</a>
+            <a href="javascript:;">自然风光</a>
+            <a href="javascript:;">园林草坪</a>
+            <a href="javascript:;">温泉</a>
+            <a href="javascript:;">景区周边</a>
+            <a href="javascript:;">泳池</a>
+            <a href="javascript:;">中式院落</a>
+            <a href="javascript:;">西式</a>
+            <a href="javascript:;">高尔夫</a>
+        </div>
+        <div>
+            <i class="fl">所选风格</i> 
+            <div id="answerOrder" class="w clearfix">
+            <a href="#" class="labe-btn fr">清空条件</a>
+        </div>   
+        </div>
+         
+    </div>
+    
+</div>
+
+
+<!--   酒店列表   -->
+<div class="hotel-list w clearfix">
+    <ul class="hotel-list-l fl">
+        <li class="hotel-list-concrete clearfix"><a href="detail.html">
+            <img class="fl" src="../images/detail/you5.jpg">
+            <ul class="fr">
+                <li class="hotlename">北京益田影人花园酒店<span>三星级</span></li>
+                <li>会场数量：4间</li>
+                <li>会场容纳人数：350人</li>
+                <li>会议厅面积：310平米</li>
+                <li>会场参考价：-</li>
+                <li>客房数量：-</li>
+                <li>客房参考价：-</li>
+                <li>
+                    <input class="fr" type="button" value="询问报价" name="">
+                </li></a>
+            </ul>           
+        </li>
+        <li class="hotel-list-concrete clearfix"><a href="detail.html">
+            <img class="fl" src="../images/detail/you5.jpg">
+            <ul class="fr">
+                <li class="hotlename">北京民族园智选假日酒店<span>三星级</span></li>
+                <li>会场数量：4间</li>
+                <li>会场容纳人数：350人</li>
+                <li>会议厅面积：310平米</li>
+                <li>会场参考价：-</li>
+                <li>客房数量：-</li>
+                <li>客房参考价：-</li>
+                <li>
+                    <input class="fr" type="button" value="询问报价" name="">
+                </li></a>
+            </ul>           
+        </li>
+        <li class="hotel-list-concrete clearfix"><a href="detail.html">
+            <img class="fl" src="../images/detail/you5.jpg">
+            <ul class="fr">
+                <li class="hotlename">北京珀丽酒店<span>三星级</span></li>
+                <li>会场数量：4间</li>
+                <li>会场容纳人数：350人</li>
+                <li>会议厅面积：310平米</li>
+                <li>会场参考价：-</li>
+                <li>客房数量：-</li>
+                <li>客房参考价：-</li>
+                <li>
+                    <input class="fr" type="button" value="询问报价" name="">
+                </li></a>
+            </ul>           
+        </li>
+        <li class="hotel-list-concrete clearfix"><a href="detail.html">
+            <img class="fl" src="../images/detail/you5.jpg">
+            <ul class="fr">
+                <li class="hotlename">什刹海之源<span>三星级</span></li>
+                <li>会场数量：4间</li>
+                <li>会场容纳人数：350人</li>
+                <li>会议厅面积：310平米</li>
+                <li>会场参考价：-</li>
+                <li>客房数量：-</li>
+                <li>客房参考价：-</li>
+                <li>
+                    <input class="fr" type="button" value="询问报价" name="">
+                </li></a>
+            </ul>           
+        </li>
+        <li class="hotel-list-concrete clearfix"><a href="detail.html">
+            <img class="fl" src="../images/detail/you5.jpg">
+            <ul class="fr">
+                <li class="hotlename">蓝调庄园<span>三星级</span></li>
+                <li>会场数量：4间</li>
+                <li>会场容纳人数：350人</li>
+                <li>会议厅面积：310平米</li>
+                <li>会场参考价：-</li>
+                <li>客房数量：-</li>
+                <li>客房参考价：-</li>
+                <li>
+                    <input class="fr" type="button" value="询问报价" name="">
+                </li></a>
+            </ul>           
+        </li>
+        <li class="hotel-list-concrete clearfix"><a href="detail.html">
+            <img class="fl" src="../images/detail/you5.jpg">
+            <ul class="fr">
+                <li class="hotlename">北京诺金酒店 <span>三星级</span></li>
+                <li>会场数量：4间</li>
+                <li>会场容纳人数：350人</li>
+                <li>会议厅面积：310平米</li>
+                <li>会场参考价：-</li>
+                <li>客房数量：-</li>
+                <li>客房参考价：-</li>
+                <li>
+                    <input class="fr" type="button" value="询问报价" name="">
+                </li></a>
+            </ul>           
+        </li>
+        <li class="hotel-list-concrete clearfix"><a href="detail.html">
+            <img class="fl" src="../images/detail/you5.jpg">
+            <ul class="fr">
+                <li class="hotlename">北京新世纪日航饭店<span>三星级</span></li>
+                <li>会场数量：4间</li>
+                <li>会场容纳人数：350人</li>
+                <li>会议厅面积：310平米</li>
+                <li>会场参考价：-</li>
+                <li>客房数量：-</li>
+                <li>客房参考价：-</li>
+                <li>
+                    <input class="fr" type="button" value="询问报价" name="">
+                </li></a>
+            </ul>           
+        </li>
+        <li class="hotel-list-concrete clearfix"><a href="detail.html">
+            <img class="fl" src="../images/detail/you5.jpg">
+            <ul class="fr">
+                <li class="hotlename">北京万达索菲特大饭店<span>三星级</span></li>
+                <li>会场数量：4间</li>
+                <li>会场容纳人数：350人</li>
+                <li>会议厅面积：310平米</li>
+                <li>会场参考价：-</li>
+                <li>客房数量：-</li>
+                <li>客房参考价：-</li>
+                <li>
+                    <input class="fr" type="button" value="询问报价" name="">
+                </li></a>
+            </ul>           
+        </li>
+    </ul>
+
+    <!--  百度地图  -->
+    <div class="labe-list-r">    
+        <div id="addres" class="fr maptop2">
+            <div id="allmap"></div>
+            
+        </div>
+        
+    </div>
+</div>
+
+
+<!--  footer   -->
+<!--  footer   -->
+<div class="h_footer w">
+    <div class="h_footer_nav">
+        <a href="#">首页</a> |
+        <a href="#">看会场</a> |
+        <a href="#">找配套</a> |
+        <a href="#">订方案</a> |
+        <a href="#">VR专区</a> |
+        <a href="#">关于我们</a>
+        <span><i class="h_dianhua"></i><strong>4008-188-360</strong></span>
+    </div>
+    <div >
+        |<span>关于版权：Copyright [dates] by [author/owner]</span>
+    </div>
+</div>
+<script type="text/javascript">jQuery(".picFocus").slide({ mainCell:".bd ul",effect:"left",autoPlay:true });</script>
+<script type="text/javascript">
+    // 百度地图API功能
+
+$(document).ready(function(){
+    var map = new BMap.Map("allmap");          
+    map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);
+    var local = new BMap.LocalSearch(map, {
+        renderOptions:{map: map}
+    });
+    local.search('酒店');
+
+
+  $(".hotlename").mouseenter(function(){
+    var map = new BMap.Map("allmap");          
+    map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);
+    var local = new BMap.LocalSearch(map, {
+        renderOptions:{map: map}
+    });
+    local.search($(this).html());
+
+});
+
+
+});
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+

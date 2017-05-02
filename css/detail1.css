@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*--- banner ---*/
+/*---轮播图---*/
+
+.tab_menu ul{width:310px;margin-bottom:10px;}
+.tab_menu li{float:left;text-align:center;list-style:none;cursor:pointer;padding:1px 35px;border-bottom:none;line-height:24px;font-size:14px;
+}
+.tab_menu li.hover{background:#DFDFDF;}
+.tab_menu li.selected{color:#FFF;background:#0673e0;}
+.tab_box div{width:920px;
+}
+.tab_box ul img{width:90px;height:66px;margin:3px;}
+.tab_box ol img{width:588px;height:428px;margin:3px;}
+.tab_box ul{width:310px;height:490px;overflow:auto;}
+.tab_box li{float:left;}
+.hide{display:none;}
+
+.nav-tab{width:980px;height:564px;margin:0 auto;}
+
+
